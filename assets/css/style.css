@@ -56,3 +56,15 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+table{
+     border:0;
+     padding: 5px;
+}
+table, tr{
+    padding: 10px;
+    margin: 15px;
+}
+.results{
+    display: none;
+    background-color: #fff;
+}
