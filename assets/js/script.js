@@ -1,7 +1,5 @@
 function meuEscopo(){
     var botao = document.getElementById('meuBotao');
-   
-  
     function recebeEvento(evento){
         const form = document.querySelector('.form');
         const resultado = document.querySelector('.results');

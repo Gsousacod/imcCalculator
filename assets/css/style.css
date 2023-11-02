@@ -2,6 +2,8 @@
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
+  --color-white: rgb(255, 255, 255);
+  --back-black: rgba(0,0,0,1);
 }
 
 * {
@@ -19,9 +21,11 @@ body {
 }
 
 .container {
+  color: var(--color-white);
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
+  background: var(--back-black);
+  backdrop-filter: blur(20px);
   padding: 20px;
   border-radius: 10px;
 }
@@ -64,6 +68,11 @@ table, tr{
     padding: 10px;
     margin: 15px;
 }
-.results{
-    background-color: #fff;
+.paragrafo-resultado, .bad {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(255, 150, 150);
 }
