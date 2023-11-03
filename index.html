@@ -10,58 +10,28 @@
 </head>
 
 <body>
-
-  <section class="container">
-    <h1>Indice de Massa Corporal</h1>
-    <table border="0">
-        <tr>
-            <td>Índice</td>
-            <td>Resultado</td>
-        </tr>
-        <tr>
-            <td>Abaixo de 17</td>
-            <td>Muito abaixo do peso</td>
-        </tr>
-        <tr>
-            <td>Entre 17 e 18,49</td>
-            <td>Abaixo do peso</td>
-        </tr>
-        <tr>
-            <td>Entre 18,50 e 24,99</td>
-            <td>Peso normal</td>
-        </tr>
-        <tr>
-            <td>Entre 25 e 29,99</td>
-            <td>Acima do peso</td>
-        </tr>
-        <tr>
-            <td>Entre 30 e 34,99</td>
-            <td>Obesidade I</td>
-        </tr>
-        <tr>
-            <td>Entre 35 e 39,99</td>
-            <td>Obesidade II (severa)</td>
-        </tr>
-        <tr>
-            <td>Acima de 40</td>
-            <td>Obesidade III (mórbida)</td>
-        </tr>
-    </table>
-    <h1>Calcule seu IMC</h1>
-    <div class="form">
-        <form action="" method="get">
-            <label for="altura">Altura:</label>
-            <input type="text" id="altura">
-            <label for="peso">Peso:</label>
-            <input type="text" id="peso">
-            <button id="meuBotao">Calcular</button>
-            <div class="results">
-            </div>
-        </form>
+<section class="container-imc">
+  <div class="content">
+    <div class="container">
+      <h1>Calcule seu IMC</h1>
+      <span class="circle">.</span>
+          <form action="" method="get" id="form">
+              <label for="altura">Altura:</label>
+              <input type="text" id="altura">
+              <label for="peso">Peso:</label>
+              <input type="text" id="peso">
+              <button type="submit"">Calcular</button>
+          </form>
+          
     </div>
-  </section>
+    <div class="results">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti, vero dolores, consectetur magni esse repudiandae nulla repellat quod assumenda, animi necessitatibus numquam asperiores? Ipsa facere quasi enim accusamus similique?
+    </div>
+  </div>
+</section>
+  
 
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
