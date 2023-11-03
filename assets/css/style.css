@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
+  --primary-color: rgb(11, 24, 28);
   --primary-color-darker: rgb(9, 48, 56);
   --color-white: rgb(255, 255, 255);
-  --back-black: rgba(0,0,0,1);
+  --back-black: rgba(0,0,0,0.5);
 }
 
 * {
@@ -14,22 +14,39 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+  background-color: rgb(179, 0, 255);
 }
-
+.container-imc{
+  box-shadow: 25px #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  
+}
 .container {
   color: var(--color-white);
-  max-width: 640px;
-  margin: 50px auto;
   background: var(--back-black);
   backdrop-filter: blur(20px);
-  padding: 20px;
-  border-radius: 10px;
+}
+.content{
+  display: flex;
+  max-width: 700px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
 }
 
+.results,.container{
+  padding: 30px;
+  width: 50%;
+  height: 75vh;
+}
+.results{
+  background-color: var(--color-white);
+  height: 75vh;
+}
 form input, form label, form button {
   display: block;
   width: 100%;
@@ -37,6 +54,9 @@ form input, form label, form button {
 }
 
 form input {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border: none;
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
@@ -47,6 +67,7 @@ form input:focus {
 }
 
 form button {
+  border-radius: 10px;
   border: none;
   background: var(--primary-color);
   color: #fff;
@@ -75,4 +96,27 @@ table, tr{
 
 .bad {
   background: rgb(255, 150, 150);
+}
+.circle {
+  z-index: -3;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+ background-color: rgba(138, 43, 226, 0.7); /* Cor de fundo background-color: rgba(138, 43, 226, 0.3); */
+ filter: blur(40px);
+  border-radius: 50%;
+  
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(138, 43, 226, 0.7); /* Cor de fundo 
+  com opacidade */
+  filter: blur(40px);
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
 }
